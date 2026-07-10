@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <title>Серверы — BR Admin</title>
+        <link rel="stylesheet" href="../css/style.css">
+          <link rel="stylesheet" href="../css/admin.css">
+            <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+              <script src="https://telegram.org/js/telegram-web-app.js"></script>
+                <script src="../js/config.js"></script>
+                  <script src="../js/supabase.js"></script>
+                  </head>
+                  <body>
+                    <header class="header">
+                        <div class="header-top">
+                              <button class="back-btn" onclick="history.back()">← Назад</button>
+                                    <div class="logo">Серверы</div>
+                                        </div>
+                                          </header>
+                                            <div style="padding:16px">
+                                                <div class="admin-card" style="margin-bottom:16px">
+                                                      <div class="admin-card-body">
+                                                              <div class="form-label" style="margin-bottom:8px">Добавить сервер</div>
+                                                                      <input class="form-input" id="newServerName" placeholder="Название сервера" style="margin-bottom:8px">
+                                                                              <input class="form-input" id="newServerSlug" placeholder="slug (латиницей, без пробелов)">
+                                                                                      <button class="btn-primary" style="margin-top:10px;width:100%;padding:12px" onclick="addServer()">
+                                                                                                Добавить
+                                                                                                        </button>
+                                                                                                              </div>
+                                                                                                                  </div>
+                                                                                                                      <div id="serversList"></div>
+                                                                                                                        </div>
+                                                                                                                          <div class="toast" id="toast"></div>
+                                                                                                                            <script src="../js/admin-servers.js"></script>
+                                                                                                                            </body>
+                                                                                                                            </html>
