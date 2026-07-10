@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <title>Админ-панель — BR Market</title>
+        <link rel="stylesheet" href="../css/style.css">
+          <link rel="stylesheet" href="../css/admin.css">
+            <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+              <script src="https://telegram.org/js/telegram-web-app.js"></script>
+                <script src="../js/config.js"></script>
+                  <script src="../js/supabase.js"></script>
+                  </head>
+                  <body>
+                    <header class="header">
+                        <div class="header-top">
+                              <div class="logo">BR<span>Admin</span></div>
+                                    <div id="adminRole" class="role-badge"></div>
+                                        </div>
+                                          </header>
+
+                                            <div id="accessDenied" style="display:none" class="access-denied">
+                                                <div class="empty-icon">🔒</div>
+                                                    <p>Нет доступа</p>
+                                                        <small>Обратитесь к владельцу проекта</small>
+                                                          </div>
+
+                                                            <div id="adminContent" style="display:none">
+                                                                <div class="admin-stats" id="adminStats"></div>
+                                                                    <div class="admin-menu" id="adminMenu"></div>
+                                                                      </div>
+
+                                                                        <div class="toast" id="toast"></div>
+                                                                          <script src="../js/admin.js"></script>
+                                                                          </body>
+                                                                          </html>

@@ -1,0 +1,235 @@
+.role-badge {
+      padding: 4px 10px;
+        border-radius: 20px;
+          font-size: 11px;
+            font-weight: 700;
+              text-transform: uppercase;
+                letter-spacing: 0.5px;
+                }
+
+                .role-owner { background: rgba(255,215,0,0.15); color: #ffd700; }
+                .role-admin { background: rgba(233,69,96,0.15); color: var(--accent); }
+                .role-senior_moderator { background: rgba(100,150,255,0.15); color: #6496ff; }
+                .role-moderator { background: rgba(100,200,100,0.15); color: #64c864; }
+                .role-arbitrator { background: rgba(200,100,200,0.15); color: #c864c8; }
+
+                .access-denied {
+                  display: flex;
+                    flex-direction: column;
+                      align-items: center;
+                        justify-content: center;
+                          min-height: 60vh;
+                            gap: 10px;
+                              color: var(--hint);
+                                text-align: center;
+                                  padding: 20px;
+                                  }
+
+                                  .access-denied .empty-icon { font-size: 60px; }
+                                  .access-denied p { font-size: 18px; font-weight: 700; color: var(--text); }
+                                  .access-denied small { font-size: 13px; }
+
+                                  .admin-stats {
+                                    display: grid;
+                                      grid-template-columns: repeat(2, 1fr);
+                                        gap: 10px;
+                                          padding: 16px;
+                                          }
+
+                                          .admin-stat-card {
+                                            background: var(--card);
+                                              border-radius: var(--radius);
+                                                border: 1px solid var(--border);
+                                                  padding: 16px;
+                                                    text-align: center;
+                                                    }
+
+                                                    .admin-stat-value {
+                                                      font-size: 28px;
+                                                        font-weight: 800;
+                                                          color: var(--accent);
+                                                            margin-bottom: 4px;
+                                                            }
+
+                                                            .admin-stat-label {
+                                                              font-size: 12px;
+                                                                color: var(--hint);
+                                                                }
+
+                                                                .admin-menu {
+                                                                  padding: 0 16px 40px;
+                                                                  }
+
+                                                                  .admin-menu-section {
+                                                                    margin-bottom: 20px;
+                                                                    }
+
+                                                                    .admin-menu-title {
+                                                                      font-size: 12px;
+                                                                        color: var(--hint);
+                                                                          font-weight: 700;
+                                                                            text-transform: uppercase;
+                                                                              letter-spacing: 0.5px;
+                                                                                margin-bottom: 8px;
+                                                                                }
+
+                                                                                .admin-menu-item {
+                                                                                  display: flex;
+                                                                                    align-items: center;
+                                                                                      gap: 14px;
+                                                                                        padding: 14px;
+                                                                                          background: var(--card);
+                                                                                            border-radius: var(--radius);
+                                                                                              border: 1px solid var(--border);
+                                                                                                margin-bottom: 8px;
+                                                                                                  cursor: pointer;
+                                                                                                    transition: opacity 0.2s;
+                                                                                                    }
+
+                                                                                                    .admin-menu-item:active { opacity: 0.7; }
+                                                                                                    .admin-menu-icon { font-size: 22px; width: 30px; text-align: center; }
+                                                                                                    .admin-menu-text { flex: 1; }
+                                                                                                    .admin-menu-name { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+                                                                                                    .admin-menu-desc { font-size: 12px; color: var(--hint); }
+                                                                                                    .admin-menu-arrow { color: var(--hint); }
+
+                                                                                                    .badge-count {
+                                                                                                      background: var(--accent);
+                                                                                                        color: #fff;
+                                                                                                          font-size: 11px;
+                                                                                                            font-weight: 700;
+                                                                                                              padding: 2px 7px;
+                                                                                                                border-radius: 10px;
+                                                                                                                  min-width: 20px;
+                                                                                                                    text-align: center;
+                                                                                                                    }
+                                                                                                                    .admin-table {
+                                                                                                                          width: 100%;
+                                                                                                                            border-collapse: collapse;
+                                                                                                                              font-size: 13px;
+                                                                                                                              }
+
+                                                                                                                              .admin-table th {
+                                                                                                                                text-align: left;
+                                                                                                                                  padding: 10px;
+                                                                                                                                    color: var(--hint);
+                                                                                                                                      font-size: 11px;
+                                                                                                                                        text-transform: uppercase;
+                                                                                                                                          border-bottom: 1px solid var(--border);
+                                                                                                                                          }
+
+                                                                                                                                          .admin-table td {
+                                                                                                                                            padding: 12px 10px;
+                                                                                                                                              border-bottom: 1px solid var(--border);
+                                                                                                                                                vertical-align: middle;
+                                                                                                                                                }
+
+                                                                                                                                                .admin-table tr:last-child td { border-bottom: none; }
+
+                                                                                                                                                .admin-card {
+                                                                                                                                                  background: var(--card);
+                                                                                                                                                    border-radius: var(--radius);
+                                                                                                                                                      border: 1px solid var(--border);
+                                                                                                                                                        margin-bottom: 10px;
+                                                                                                                                                          overflow: hidden;
+                                                                                                                                                          }
+
+                                                                                                                                                          .admin-card-header {
+                                                                                                                                                            padding: 14px;
+                                                                                                                                                              border-bottom: 1px solid var(--border);
+                                                                                                                                                                display: flex;
+                                                                                                                                                                  align-items: center;
+                                                                                                                                                                    justify-content: space-between;
+                                                                                                                                                                    }
+
+                                                                                                                                                                    .admin-card-body { padding: 14px; }
+
+                                                                                                                                                                    .admin-card-title {
+                                                                                                                                                                      font-size: 15px;
+                                                                                                                                                                        font-weight: 600;
+                                                                                                                                                                        }
+
+                                                                                                                                                                        .btn-row {
+                                                                                                                                                                          display: flex;
+                                                                                                                                                                            gap: 8px;
+                                                                                                                                                                              flex-wrap: wrap;
+                                                                                                                                                                                margin-top: 10px;
+                                                                                                                                                                                }
+
+                                                                                                                                                                                .btn-warn {
+                                                                                                                                                                                  padding: 7px 12px;
+                                                                                                                                                                                    background: rgba(255,150,0,0.15);
+                                                                                                                                                                                      color: #ff9600;
+                                                                                                                                                                                        border: 1px solid rgba(255,150,0,0.3);
+                                                                                                                                                                                          border-radius: var(--radius-sm);
+                                                                                                                                                                                            font-size: 12px;
+                                                                                                                                                                                              font-weight: 600;
+                                                                                                                                                                                                cursor: pointer;
+                                                                                                                                                                                                }
+
+                                                                                                                                                                                                .btn-ban {
+                                                                                                                                                                                                  padding: 7px 12px;
+                                                                                                                                                                                                    background: rgba(255,80,80,0.15);
+                                                                                                                                                                                                      color: #ff5050;
+                                                                                                                                                                                                        border: 1px solid rgba(255,80,80,0.3);
+                                                                                                                                                                                                          border-radius: var(--radius-sm);
+                                                                                                                                                                                                            font-size: 12px;
+                                                                                                                                                                                                              font-weight: 600;
+                                                                                                                                                                                                                cursor: pointer;
+                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                .btn-unban {
+                                                                                                                                                                                                                  padding: 7px 12px;
+                                                                                                                                                                                                                    background: rgba(80,200,80,0.15);
+                                                                                                                                                                                                                      color: #50c850;
+                                                                                                                                                                                                                        border: 1px solid rgba(80,200,80,0.3);
+                                                                                                                                                                                                                          border-radius: var(--radius-sm);
+                                                                                                                                                                                                                            font-size: 12px;
+                                                                                                                                                                                                                              font-weight: 600;
+                                                                                                                                                                                                                                cursor: pointer;
+                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                .btn-primary {
+                                                                                                                                                                                                                                  padding: 7px 12px;
+                                                                                                                                                                                                                                    background: var(--accent);
+                                                                                                                                                                                                                                      color: #fff;
+                                                                                                                                                                                                                                        border: none;
+                                                                                                                                                                                                                                          border-radius: var(--radius-sm);
+                                                                                                                                                                                                                                            font-size: 12px;
+                                                                                                                                                                                                                                              font-weight: 600;
+                                                                                                                                                                                                                                                cursor: pointer;
+                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                .status-badge {
+                                                                                                                                                                                                                                                  padding: 3px 8px;
+                                                                                                                                                                                                                                                    border-radius: 4px;
+                                                                                                                                                                                                                                                      font-size: 11px;
+                                                                                                                                                                                                                                                        font-weight: 700;
+                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                        .status-pending { background: rgba(255,150,0,0.15); color: #ff9600; }
+                                                                                                                                                                                                                                                        .status-resolved { background: rgba(80,200,80,0.15); color: #50c850; }
+                                                                                                                                                                                                                                                        .status-rejected { background: rgba(150,150,150,0.15); color: #aaa; }
+
+                                                                                                                                                                                                                                                        .admin-search {
+                                                                                                                                                                                                                                                          display: flex;
+                                                                                                                                                                                                                                                            align-items: center;
+                                                                                                                                                                                                                                                              background: var(--bg2);
+                                                                                                                                                                                                                                                                border-radius: var(--radius-sm);
+                                                                                                                                                                                                                                                                  padding: 0 12px;
+                                                                                                                                                                                                                                                                    gap: 8px;
+                                                                                                                                                                                                                                                                      border: 1px solid var(--border);
+                                                                                                                                                                                                                                                                        margin-bottom: 16px;
+                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                        .admin-search input {
+                                                                                                                                                                                                                                                                          flex: 1;
+                                                                                                                                                                                                                                                                            background: none;
+                                                                                                                                                                                                                                                                              border: none;
+                                                                                                                                                                                                                                                                                outline: none;
+                                                                                                                                                                                                                                                                                  color: var(--text);
+                                                                                                                                                                                                                                                                                    font-size: 15px;
+                                                                                                                                                                                                                                                                                      padding: 10px 0;
+                                                                                                                                                                                                                                                                                      }
+                                                                                                                    }
+}
