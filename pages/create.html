@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <title>Новое объявление — BR Market</title>
+        <link rel="stylesheet" href="../css/style.css">
+          <link rel="stylesheet" href="../css/create.css">
+            <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+              <script src="https://telegram.org/js/telegram-web-app.js"></script>
+                <script src="../js/config.js"></script>
+                  <script src="../js/supabase.js"></script>
+                  </head>
+                  <body>
+
+                    <header class="header">
+                        <div class="header-top">
+                              <button class="back-btn" onclick="history.back()">← Назад</button>
+                                    <div class="logo">Новое объявление</div>
+                                        </div>
+                                          </header>
+
+                                            <div class="form-container">
+
+                                                <div class="form-section">
+                                                      <div class="form-label">Сервер <span class="required">*</span></div>
+                                                            <div class="chips-scroll" id="serverChips"></div>
+                                                                </div>
+
+                                                                    <div class="form-section">
+                                                                          <div class="form-label">Категория <span class="required">*</span></div>
+                                                                                <div class="categories-select" id="categoryChips"></div>
+                                                                                    </div>
+
+                                                                                        <div class="form-section">
+                                                                                              <div class="form-label">Название <span class="required">*</span></div>
+                                                                                                    <input class="form-input" id="titleInput" type="text"
+                                                                                                            placeholder="Например: BMW M5 F90 красный" maxlength="100">
+                                                                                                                  <div class="form-hint">До 100 символов</div>
+                                                                                                                      </div>
+
+                                                                                                                          <div class="form-section">
+                                                                                                                                <div class="form-label">Цена в виртах <span class="required">*</span></div>
+                                                                                                                                      <input class="form-input" id="priceInput" type="number"
+                                                                                                                                              placeholder="0" min="0" max="999999999">
+                                                                                                                                                  </div>
+
+                                                                                                                                                      <div class="form-section">
+                                                                                                                                                            <div class="form-label">Описание</div>
+                                                                                                                                                                  <textarea class="form-textarea" id="descInput"
+                                                                                                                                                                          placeholder="Опишите товар подробнее..." maxlength="2000"></textarea>
+                                                                                                                                                                                <div class="form-hint"><span id="descCount">0</span> / 2000</div>
+                                                                                                                                                                                    </div>
+
+                                                                                                                                                                                        <div class="form-section">
+                                                                                                                                                                                              <div class="form-label">Фотографии</div>
+                                                                                                                                                                                                    <div class="photos-grid" id="photosGrid">
+                                                                                                                                                                                                            <div class="photo-add" onclick="addPhoto()">
+                                                                                                                                                                                                                      <div class="photo-add-icon">📷</div>
+                                                                                                                                                                                                                                <div class="photo-add-text">Добавить фото</div>
+                                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                    <div class="form-hint">До ${CONFIG.MAX_PHOTOS_PER_LISTING} фотографий</div>
+                                                                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                                                                            <div class="forbidden-warning" id="forbiddenWarning" style="display:none">
+                                                                                                                                                                                                                                                                  ⚠️ <span id="forbiddenText"></span>
+                                                                                                                                                                                                                                                                      </div>
+
+                                                                                                                                                                                                                                                                          <button class="btn-submit" id="submitBtn" onclick="submitListing()">
+                                                                                                                                                                                                                                                                                Опубликовать объявление
+                                                                                                                                                                                                                                                                                    </button>
+
+                                                                                                                                                                                                                                                                                        <div class="form-info">
+                                                                                                                                                                                                                                                                                              Объявление будет активно 6 часов. После этого вы сможете его продлить.
+                                                                                                                                                                                                                                                                                                  </div>
+
+                                                                                                                                                                                                                                                                                                    </div>
+
+                                                                                                                                                                                                                                                                                                      <div class="toast" id="toast"></div>
+                                                                                                                                                                                                                                                                                                        <script src="../js/create.js"></script>
+                                                                                                                                                                                                                                                                                                        </body>
+                                                                                                                                                                                                                                                                                                        </html>
