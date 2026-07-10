@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <title>BR Market</title>
+        <link rel="stylesheet" href="css/style.css">
+          <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+            <script src="https://telegram.org/js/telegram-web-app.js"></script>
+              <script src="js/config.js"></script>
+                <script src="js/supabase.js"></script>
+                </head>
+                <body>
+
+                  <header class="header">
+                      <div class="header-top">
+                            <div class="logo">BR<span>Market</span></div>
+                                  <div class="header-avatar" id="userAvatar" onclick="openProfile()">?</div>
+                                      </div>
+                                          <div class="search-bar">
+                                                <span class="search-icon">🔍</span>
+                                                      <input type="text" id="searchInput" placeholder="Поиск объявлений..." oninput="onSearch(this.value)">
+                                                          </div>
+                                                            </header>
+
+                                                              <div class="server-scroll" id="serverList"></div>
+                                                              <div class="section">
+                                                                    <div class="section-title">Категории</div>
+                                                                        <div class="categories-grid" id="categoriesList"></div>
+                                                                          </div>
+
+                                                                            <div class="section">
+                                                                                <div class="section-title">
+                                                                                      <span id="listingsTitle">Новые объявления</span>
+                                                                                          </div>
+                                                                                              <div class="listings-grid" id="listingsGrid"></div>
+                                                                                                </div>
+
+                                                                                                  <nav class="bottom-nav">
+                                                                                                      <div class="nav-item active" onclick="goTo('home')">
+                                                                                                            <span class="nav-icon">🏠</span>
+                                                                                                                  <span>Главная</span>
+                                                                                                                      </div>
+                                                                                                                          <div class="nav-item" onclick="goTo('search')">
+                                                                                                                                <span class="nav-icon">🔍</span>
+                                                                                                                                      <span>Поиск</span>
+                                                                                                                                          </div>
+                                                                                                                                              <div class="nav-item" onclick="goTo('create')">
+                                                                                                                                                    <span class="nav-icon">➕</span>
+                                                                                                                                                          <span>Подать</span>
+                                                                                                                                                              </div>
+                                                                                                                                                                  <div class="nav-item" onclick="goTo('favorites')">
+                                                                                                                                                                        <span class="nav-icon">❤️</span>
+                                                                                                                                                                              <span>Избранное</span>
+                                                                                                                                                                                  </div>
+                                                                                                                                                                                      <div class="nav-item" onclick="openProfile()">
+                                                                                                                                                                                            <span class="nav-icon">👤</span>
+                                                                                                                                                                                                  <span>Профиль</span>
+                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                        </nav>
+
+                                                                                                                                                                                                          <div class="toast" id="toast"></div>
+                                                                                                                                                                                                            <script src="js/app.js"></script>
+                                                                                                                                                                                                            </body>
+                                                                                                                                                                                                            </html>
