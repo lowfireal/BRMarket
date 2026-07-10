@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <title>Профиль — BR Market</title>
+        <link rel="stylesheet" href="../css/style.css">
+          <link rel="stylesheet" href="../css/profile.css">
+            <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+              <script src="https://telegram.org/js/telegram-web-app.js"></script>
+                <script src="../js/config.js"></script>
+                  <script src="../js/supabase.js"></script>
+                  </head>
+                  <body>
+
+                    <header class="header">
+                        <div class="header-top">
+                              <button class="back-btn" onclick="history.back()">← Назад</button>
+                                    <div class="logo">Профиль</div>
+                                        </div>
+                                          </header>
+
+                                            <div id="profileContent">
+                                                <div style="padding:40px;text-align:center;color:var(--hint)">Загрузка...</div>
+                                                  </div>
+
+                                                    <nav class="bottom-nav">
+                                                        <div class="nav-item" onclick="window.location.href='../index.html'">
+                                                              <span class="nav-icon">🏠</span><span>Главная</span>
+                                                                  </div>
+                                                                      <div class="nav-item" onclick="window.location.href='search.html'">
+                                                                            <span class="nav-icon">🔍</span><span>Поиск</span>
+                                                                                </div>
+                                                                                    <div class="nav-item" onclick="window.location.href='create.html'">
+                                                                                          <span class="nav-icon">➕</span><span>Подать</span>
+                                                                                              </div>
+                                                                                                  <div class="nav-item" onclick="window.location.href='favorites.html'">
+                                                                                                        <span class="nav-icon">❤️</span><span>Избранное</span>
+                                                                                                            </div>
+                                                                                                                <div class="nav-item active">
+                                                                                                                      <span class="nav-icon">👤</span><span>Профиль</span>
+                                                                                                                          </div>
+                                                                                                                            </nav>
+
+                                                                                                                              <div class="toast" id="toast"></div>
+                                                                                                                                <script src="../js/profile.js"></script>
+                                                                                                                                </body>
+                                                                                                                                </html>

@@ -1,0 +1,195 @@
+.profile-header {
+      background: var(--card);
+        border-bottom: 1px solid var(--border);
+          padding: 24px 16px;
+            display: flex;
+              align-items: center;
+                gap: 16px;
+                }
+
+                .profile-avatar {
+                  width: 70px;
+                    height: 70px;
+                      border-radius: 50%;
+                        background: var(--accent);
+                          display: flex;
+                            align-items: center;
+                              justify-content: center;
+                                font-size: 28px;
+                                  font-weight: 700;
+                                    flex-shrink: 0;
+                                      overflow: hidden;
+                                      }
+
+                                      .profile-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+                                      .profile-info { flex: 1; }
+
+                                      .profile-name {
+                                        font-size: 18px;
+                                          font-weight: 700;
+                                            margin-bottom: 4px;
+                                            }
+
+                                            .profile-username {
+                                              font-size: 13px;
+                                                color: var(--hint);
+                                                  margin-bottom: 8px;
+                                                  }
+
+                                                  .profile-rating {
+                                                    display: flex;
+                                                      align-items: center;
+                                                        gap: 6px;
+                                                          font-size: 14px;
+                                                          }
+
+                                                          .stars { color: #ffd700; }
+
+                                                          .profile-stats {
+                                                            display: grid;
+                                                              grid-template-columns: repeat(3, 1fr);
+                                                                gap: 1px;
+                                                                  background: var(--border);
+                                                                    border-top: 1px solid var(--border);
+                                                                      border-bottom: 1px solid var(--border);
+                                                                      }
+
+                                                                      .stat-item {
+                                                                        background: var(--card);
+                                                                          padding: 14px 8px;
+                                                                            text-align: center;
+                                                                            }
+
+                                                                            .stat-value {
+                                                                              font-size: 20px;
+                                                                                font-weight: 800;
+                                                                                  color: var(--accent);
+                                                                                    margin-bottom: 2px;
+                                                                                    }
+
+                                                                                    .stat-label {
+                                                                                      font-size: 11px;
+                                                                                        color: var(--hint);
+                                                                                        }
+
+                                                                                        .profile-menu {
+                                                                                          padding: 12px 16px;
+                                                                                          }
+
+                                                                                          .menu-item {
+                                                                                            display: flex;
+                                                                                              align-items: center;
+                                                                                                gap: 14px;
+                                                                                                  padding: 14px 0;
+                                                                                                    border-bottom: 1px solid var(--border);
+                                                                                                      cursor: pointer;
+                                                                                                        font-size: 15px;
+                                                                                                        }
+
+                                                                                                        .menu-item:last-child { border-bottom: none; }
+                                                                                                        .menu-item:active { opacity: 0.7; }
+
+                                                                                                        .menu-icon { font-size: 20px; width: 28px; text-align: center; }
+                                                                                                        .menu-text { flex: 1; }
+                                                                                                        .menu-arrow { color: var(--hint); font-size: 12px; }
+
+                                                                                                        .listings-section { padding: 0 16px 80px; }
+
+                                                                                                        .my-listing-card {
+                                                                                                          background: var(--card);
+                                                                                                            border-radius: var(--radius);
+                                                                                                              border: 1px solid var(--border);
+                                                                                                                padding: 12px;
+                                                                                                                  margin-bottom: 10px;
+                                                                                                                    display: flex;
+                                                                                                                      gap: 12px;
+                                                                                                                        align-items: center;
+                                                                                                                        }
+
+                                                                                                                        .my-listing-photo {
+                                                                                                                          width: 60px;
+                                                                                                                            height: 60px;
+                                                                                                                              border-radius: var(--radius-sm);
+                                                                                                                                background: var(--bg2);
+                                                                                                                                  overflow: hidden;
+                                                                                                                                    flex-shrink: 0;
+                                                                                                                                      display: flex;
+                                                                                                                                        align-items: center;
+                                                                                                                                          justify-content: center;
+                                                                                                                                            font-size: 24px;
+                                                                                                                                            }
+
+                                                                                                                                            .my-listing-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+                                                                                                                                            .my-listing-info { flex: 1; min-width: 0; }
+
+                                                                                                                                            .my-listing-title {
+                                                                                                                                              font-size: 14px;
+                                                                                                                                                font-weight: 600;
+                                                                                                                                                  white-space: nowrap;
+                                                                                                                                                    overflow: hidden;
+                                                                                                                                                      text-overflow: ellipsis;
+                                                                                                                                                        margin-bottom: 4px;
+                                                                                                                                                        }
+
+                                                                                                                                                        .my-listing-price {
+                                                                                                                                                          font-size: 15px;
+                                                                                                                                                            font-weight: 700;
+                                                                                                                                                              color: var(--accent);
+                                                                                                                                                                margin-bottom: 4px;
+                                                                                                                                                                }
+
+                                                                                                                                                                .my-listing-status {
+                                                                                                                                                                  font-size: 11px;
+                                                                                                                                                                    padding: 2px 8px;
+                                                                                                                                                                      border-radius: 4px;
+                                                                                                                                                                        display: inline-block;
+                                                                                                                                                                        }
+
+                                                                                                                                                                        .status-active { background: rgba(80,200,80,0.15); color: #50c850; }
+                                                                                                                                                                        .status-expired { background: rgba(255,150,0,0.15); color: #ff9600; }
+                                                                                                                                                                        .status-sold { background: rgba(150,150,150,0.15); color: #aaa; }
+
+                                                                                                                                                                        .my-listing-actions {
+                                                                                                                                                                          display: flex;
+                                                                                                                                                                            flex-direction: column;
+                                                                                                                                                                              gap: 6px;
+                                                                                                                                                                              }
+
+                                                                                                                                                                              .btn-small {
+                                                                                                                                                                                padding: 6px 10px;
+                                                                                                                                                                                  border-radius: var(--radius-sm);
+                                                                                                                                                                                    font-size: 12px;
+                                                                                                                                                                                      font-weight: 600;
+                                                                                                                                                                                        border: none;
+                                                                                                                                                                                          cursor: pointer;
+                                                                                                                                                                                          }
+
+                                                                                                                                                                                          .btn-extend { background: var(--accent); color: #fff; }
+                                                                                                                                                                                          .btn-delete { background: var(--bg2); color: var(--hint); border: 1px solid var(--border); }
+
+                                                                                                                                                                                          .section-tabs {
+                                                                                                                                                                                            display: flex;
+                                                                                                                                                                                              gap: 0;
+                                                                                                                                                                                                margin-bottom: 16px;
+                                                                                                                                                                                                  background: var(--bg2);
+                                                                                                                                                                                                    border-radius: var(--radius-sm);
+                                                                                                                                                                                                      padding: 4px;
+                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                      .tab-btn {
+                                                                                                                                                                                                        flex: 1;
+                                                                                                                                                                                                          padding: 8px;
+                                                                                                                                                                                                            border: none;
+                                                                                                                                                                                                              background: none;
+                                                                                                                                                                                                                color: var(--hint);
+                                                                                                                                                                                                                  font-size: 13px;
+                                                                                                                                                                                                                    font-weight: 600;
+                                                                                                                                                                                                                      border-radius: 6px;
+                                                                                                                                                                                                                        cursor: pointer;
+                                                                                                                                                                                                                          transition: all 0.2s;
+                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                          .tab-btn.active { background: var(--accent); color: #fff; }
+}
