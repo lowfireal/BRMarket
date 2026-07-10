@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <title>Объявление — BR Market</title>
+        <link rel="stylesheet" href="../css/style.css">
+          <link rel="stylesheet" href="../css/listing.css">
+            <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+              <script src="https://telegram.org/js/telegram-web-app.js"></script>
+                <script src="../js/config.js"></script>
+                  <script src="../js/supabase.js"></script>
+                  </head>
+                  <body>
+
+                    <header class="header">
+                        <div class="header-top">
+                              <button class="back-btn" onclick="history.back()">← Назад</button>
+                                    <div class="header-actions">
+                                            <button class="icon-btn" onclick="shareListing()">🔗</button>
+                                                    <button class="icon-btn" onclick="openReport()">🚩</button>
+                                                          </div>
+                                                              </div>
+                                                                </header>
+
+                                                                  <div id="listingContent">
+                                                                      <div class="listing-skeleton">
+                                                                            <div class="skeleton" style="width:100%;aspect-ratio:16/9"></div>
+                                                                                  <div style="padding:16px">
+                                                                                          <div class="skeleton skeleton-line" style="margin-bottom:10px"></div>
+                                                                                                  <div class="skeleton skeleton-line short"></div>
+                                                                                                        </div>
+                                                                                                            </div>
+                                                                                                              </div>
+
+                                                                                                                <div class="bottom-actions" id="bottomActions" style="display:none">
+                                                                                                                    <button class="btn-favorite" id="favBtn" onclick="toggleFav()">❤️</button>
+                                                                                                                        <button class="btn-write" onclick="writeSeller()">✉️ Написать продавцу</button>
+                                                                                                                          </div>
+
+                                                                                                                            <div class="modal-overlay" id="reportModal" style="display:none">
+                                                                                                                                <div class="modal">
+                                                                                                                                      <div class="modal-title">Причина жалобы</div>
+                                                                                                                                            <div class="report-options" id="reportOptions"></div>
+                                                                                                                                                  <button class="btn-cancel" onclick="closeReport()">Отмена</button>
+                                                                                                                                                      </div>
+                                                                                                                                                        </div>
+
+                                                                                                                                                          <div class="toast" id="toast"></div>
+                                                                                                                                                            <script src="../js/listing.js"></script>
+                                                                                                                                                            </body>
+                                                                                                                                                            </html>
+                                                                                                                                                            
